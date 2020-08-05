@@ -1,27 +1,49 @@
 package sec03.exam03;
 
 public class CarExample {
-	public static void main(String[] args) {
-		Car car1 = new Car();
-		System.out.println("car1.company : " + car1.company);
-		System.out.println();
-		
-		Car car2 = new Car("ÀÚ°¡¿ë");
-		System.out.println("car2.company : " + car2.company);
-		System.out.println("car2.model : " + car2.model);
-		System.out.println();
-		
-		Car car3 = new Car("ÀÚ°¡¿ë", "»¡°­");
-		System.out.println("car3.company : " + car3.company);
-		System.out.println("car3.model : " + car3.model);
-		System.out.println("car3.color : " + car3.color);
-		System.out.println();
-		
-		Car car4 = new Car("ÅÃ½Ã", "°ËÁ¤", 200);
-		System.out.println("car4.company : " + car4.company);
-		System.out.println("car4.model : " + car4.model);
-		System.out.println("car4.color : " + car4.color);
-		System.out.println("car4.maxSpeed : " + car4.maxSpeed);
-	}
+  public static void main(String[] args) {
+    Car car1 = new Car(); //í•„ë“œ ê°’ì€ ê¸°ë³¸ê°’ìœ¼ë¡œ ë“¤ì–´ê°ˆ ê²ƒ
+    System.out.println(car1.company); //í˜„ëŒ€ìë™ì°¨
+    System.out.println(car1.model); //null
+    System.out.println(car1.color); //null
+    System.out.println(car1.maxSpeed); //0
+    System.out.println();
+
+    Car car2 = new Car("ìê°€ìš©");
+    System.out.println(car2.company);
+    System.out.println(car2.model);
+    System.out.println();
+    /*
+       Car(String model) {
+        this.model = model;
+        }
+     */
+
+    Car car3 = new Car("ìê°€ìš©", "ë¹¨ê°•");
+    System.out.println(car3.company);
+    System.out.println(car3.model);
+    System.out.println(car3.color);
+    System.out.println();
+    /*
+       Car(String model, String color) {
+        this.model = model;
+        this.color = color;
+        }
+     */
+
+    Car car4 = new Car("íƒì‹œ", "ê²€ì •", 200);
+    System.out.println(car4.company);
+    System.out.println(car4.model);
+    System.out.println(car4.color);
+    System.out.println(car4.maxSpeed);
+    /*
+       Car(String model, String color, int maxSpeed) {
+        this.model = model;
+        this.color = color;
+        this.maxSpeed = maxSpeed;
+        }
+     */
+
+  }
 }
 

@@ -1,28 +1,32 @@
 package sec03.exam04;
 
 public class Car {
-	//ÇÊµå
-	String company = "Çö´ëÀÚµ¿Â÷";
-	String model;
-	String color;
-	int maxSpeed;
-	
-	//»ı¼ºÀÚ
-	Car() {
-	}
-	
-	Car(String model) {
-		this(model, null, 0);
-	}
-	
-	Car(String model, String color) {
-		this(model, color, 0);
-	}
-	
-	Car(String model, String color, int maxSpeed) {
-		this.model = model;
-		this.color = color;
-		this.maxSpeed = maxSpeed;
-	}
+  //í•„ë“œ
+  String company = "í˜„ëŒ€ìë™ì°¨";
+  String model;
+  String color;
+  int maxSpeed;
+
+  //ìƒì„±ì
+  Car() {
+  }
+
+  //ì¤‘ë³µì½”ë“œë¥¼ this()ë¡œ ì¤„ì´ì
+  Car(String model) {
+    this(model, null, 0);
+  }
+
+  Car(String model, String color) {
+    this(model, color, 0);
+    //ì›ë˜ ì½”ë“œ
+    //this.model = model;
+    //this.color = color;
+  }
+
+  Car(String model, String color, int maxSpeed) {
+    this.model = model;
+    this.color = color;
+    this.maxSpeed = maxSpeed;
+  }
 }
 
