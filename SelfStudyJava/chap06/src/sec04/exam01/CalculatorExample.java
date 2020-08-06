@@ -10,7 +10,7 @@ public class CalculatorExample {
 
     byte x = 10;
     byte y = 4;
-    double result2 = myCalc.divide(x, y);
+    double result2 = myCalc.divide(x, y); //자동적으로 byte가 int로 바껴서 들어감.
     System.out.println("result2: " + result2);
 
     myCalc.powerOff();

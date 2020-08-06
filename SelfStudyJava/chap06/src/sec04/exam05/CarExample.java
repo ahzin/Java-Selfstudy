@@ -1,11 +1,11 @@
 package sec04.exam05;
 
 public class CarExample {
-	public static void main(String[] args) {
-		Car myCar = new Car();
-		myCar.keyTurnOn();
-		myCar.run();
-		int speed = myCar.getSpeed();
-		System.out.println("ÇöÀç ¼Óµµ: " + speed + "km/h");
-	}
+  public static void main(String[] args) {
+    Car myCar = new Car();
+    myCar.keyTurnOn();
+    myCar.run();
+    int speed = myCar.getSpeed();
+    System.out.println("í˜„ì¬ ì†ë„: " + speed + "km/h");
+  }
 }

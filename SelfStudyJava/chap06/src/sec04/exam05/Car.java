@@ -1,24 +1,24 @@
 package sec04.exam05;
 
 public class Car {
-	//ÇÊµå
-	int speed;
-	
-	//»ý¼ºÀÚ
-	
-	//¸Þ¼Òµå
-	int getSpeed() {
-		return speed;
-	}
-	
-	void keyTurnOn() {
-		System.out.println("Å°¸¦ µ¹¸³´Ï´Ù.");
-	}	
-	
-	void run() {
-		for(int i=10; i<=50; i+=10) {
-			speed = i;
-			System.out.println("´Þ¸³´Ï´Ù.(½Ã¼Ó:" + speed + "km/h)");
-		}
-	}	
+  //Field
+  int speed;
+
+  //Constructor
+
+  //Method
+  int getSpeed() {
+    return speed;
+  }
+
+  void keyTurnOn() {
+    System.out.println("í‚¤ë¥¼ ëŒë¦½ë‹ˆë‹¤.");
+  }
+
+  void run() {
+    for(int i=0; i<=50; i+=10) {
+      speed = i;
+      System.out.println("ë‹¬ë¦½ë‹ˆë‹¤.(ì‹œì†:" + speed + "km/h)");
+    }
+  }
 }

@@ -1,22 +1,22 @@
 package sec04.exam03;
 
 public class CarExample {
-	public static void main(String[] args) {
-		Car myCar = new Car();
-		
-		myCar.setGas(5);  //CarÀÇ setGas() ¸Ş¼Òµå È£Ãâ
-		
-		boolean gasState = myCar.isLeftGas();  //CarÀÇ isLeftGas() ¸Ş¼Òµå È£Ãâ
-		if(gasState) {
-			System.out.println("Ãâ¹ßÇÕ´Ï´Ù.");
-			myCar.run();  //CarÀÇ run() ¸Ş¼Òµå È£Ãâ
-		}
-		
-		if(myCar.isLeftGas()) {  //CarÀÇ isLeftGas() ¸Ş¼Òµå È£Ãâ
-			System.out.println("gas¸¦ ÁÖÀÔÇÒ ÇÊ¿ä°¡ ¾ø½À´Ï´Ù.");
-		} else {
-			System.out.println("gas¸¦ ÁÖÀÔÇÏ¼¼¿ä.");
-		}
-	}
+  public static void main(String[] args) {
+    Car myCar = new Car(); //ê°ì²´ ìƒì„±
+
+    myCar.setGas(5);  //Carì˜ setGas() ë©”ì†Œë“œ í˜¸ì¶œ
+
+    boolean gasState = myCar.isLeftGas();  //Carì˜ isLeftGas() ë©”ì†Œë“œ í˜¸ì¶œ
+    if(gasState) {
+      System.out.println("ì¶œë°œí•©ë‹ˆë‹¤.");
+      myCar.run();  //Carì˜ run() ë©”ì†Œë“œ í˜¸ì¶œ
+    }
+
+    if(myCar.isLeftGas()) {  //Carì˜ isLeftGas() ë©”ì†Œë“œ í˜¸ì¶œ
+      System.out.println("gasë¥¼ ì£¼ì…í•  í•„ìš”ê°€ ì—†ìŠµë‹ˆë‹¤.");
+    } else {
+      System.out.println("gasë¥¼ ì£¼ì…í•˜ì„¸ìš”.");
+    }
+  }
 }
 

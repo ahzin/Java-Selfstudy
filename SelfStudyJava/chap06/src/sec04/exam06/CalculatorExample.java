@@ -1,18 +1,18 @@
 package sec04.exam06;
 
 public class CalculatorExample {
-	public static void main(String[] args) {
-		Calculator myCalcu = new Calculator();
-		
-		//Á¤»ç°¢ÇüÀÇ ³ĞÀÌ ±¸ÇÏ±â
-		double result1 = myCalcu.areaRectangle(10);
+  public static void main(String[] args) {
+    Calculator myCalcu = new Calculator();
 
-		//Á÷»ç°¢ÇüÀÇ ³ĞÀÌ ±¸ÇÏ±â
-		double result2 = myCalcu.areaRectangle(10, 20);
-		
-		//°á°ú Ãâ·Â
-		System.out.println("Á¤»ç°¢Çü ³ĞÀÌ=" + result1);
-		System.out.println("Á÷»ç°¢Çü ³ĞÀÌ=" + result2);
-	}
+    //ì •ì‚¬ê°í˜•ì˜ ë„“ì´ êµ¬í•˜ê¸°
+    double result1 = myCalcu.areaRectangle(10);
+
+    //ì§ì‚¬ê°í˜•ì˜ ë„“ì´ êµ¬í•˜ê¸°
+    double result2 = myCalcu.areaRectangle(10, 20);
+
+    //ê²°ê³¼ ì¶œë ¥
+    System.out.println("ì •ì‚¬ê°í˜•ì˜ ë„“ì´=" + result1);
+    System.out.println("ì§ì‚¬ê°í˜•ì˜ ë„“ì´=" + result2);
+  }
 }
 

@@ -18,11 +18,11 @@ public class Calculator {
   }
 
   double divide(int x, int y) {
-    double result = (double)x / (double)y;
+    double result = (double)x / (double)y; //강제 타입 변환, 하나만 바꿔도 ㅇㅋ
     return result;
   }
 
   void powerOff() {
-    System.out.println("������ ���ϴ�");
+    System.out.println("전원을 끕니다.");
   }
 }

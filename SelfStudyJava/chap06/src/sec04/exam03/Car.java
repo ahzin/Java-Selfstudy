@@ -1,36 +1,36 @@
 package sec04.exam03;
 
 public class Car {
-	//ÇÊµå
-	int gas;
-	
-	//»ý¼ºÀÚ
-	
-	//¸Þ¼Òµå
-	void setGas(int gas) {
-		this.gas = gas;
-	}
-	
-	boolean isLeftGas() {
-		if(gas==0) {
-			System.out.println("gas°¡ ¾ø½À´Ï´Ù."); 
-			return false;
-		}
-		System.out.println("gas°¡ ÀÖ½À´Ï´Ù."); 
-		return true;
-	}
-	
-	
-	void run() {
-		while(true) {
-			if(gas > 0) {
-				System.out.println("´Þ¸³´Ï´Ù.(gasÀÜ·®:" + gas + ")");
-				gas -= 1;
-			} else {
-				System.out.println("¸ØÃä´Ï´Ù.(gasÀÜ·®:" + gas + ")");
-				return;
-			}
-		}
-	}
+  //Field
+  int gas;
+
+  //Constructor
+
+  //Method
+  void setGas(int gas) {
+    this.gas = gas; //intë¡œ ë°›ì€ gasë¥¼ í•„ë“œë¡œ ì €ìž¥
+  }
+
+  boolean isLeftGas() {
+    if(gas==0) {
+      System.out.println("gasê°€ ì—†ìŠµë‹ˆë‹¤.");
+      return false;
+    }
+    System.out.println("gasê°€ ìžˆìŠµë‹ˆë‹¤.");
+    return true;
+  }
+
+
+  void run() { //ì™¸ë¶€ë¡œë¶€í„° ë°›ëŠ” ê°’ì´ ì—†ìŒ
+    while(true) {
+      if(gas > 0) {
+        System.out.println("ë‹¬ë¦½ë‹ˆë‹¤.(gasìž”ëŸ‰:" + gas + ")");
+        gas--;
+      } else {
+        System.out.println("ë©ˆì¶¥ë‹ˆë‹¤.(gasìž”ëŸ‰:" + gas + ")");
+        return;
+      }
+    }
+  }
 }
 

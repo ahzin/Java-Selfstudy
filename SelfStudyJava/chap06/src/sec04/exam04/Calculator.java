@@ -1,27 +1,25 @@
 package sec04.exam04;
 
 public class Calculator {
-	//ÇÊµå
-	//»ý¼ºÀÚ
-	//¸Þ¼Òµå
-	int plus(int x, int y) {
-		int result = x + y;
-		return result;
-	}
-	
-	double avg(int x, int y) {
-		double sum = plus(x, y);
-		double result = sum / 2;
-		return result;
-	}
-	
-	void execute() {
-		double result = avg(7, 10);
-		println("½ÇÇà°á°ú: " + result);
-	}
-	
-	void println(String message) {
-		System.out.println(message);
-	}	
+  //Methodë§Œ ì„ ì–¸
+  int plus(int x, int y) {
+    int result = x + y;
+    return result;
+  }
+
+  double avg(int x, int y) {
+    double sum = plus(x, y); //plus ë©”ì„œë“œ í˜¸ì¶œ
+    double result = sum / 2;
+    return result;
+  }
+
+  void execute() {
+    double result = avg(7, 8); //x=7, y=10
+    println("ì‹¤í–‰ê²°ê³¼: " + result);
+  }
+
+  void println(String message) {
+    System.out.println(message);
+  }
 }
 
