@@ -1,19 +1,22 @@
 package sec05.exam04;
 
 public class SingletonExample {
-	public static void main(String[] args) {
-		/*
-		Singleton obj1 = new Singleton();  //ÄÄÆÄÀÏ ¿¡·¯
-		Singleton obj2 = new Singleton();  //ÄÄÆÄÀÏ ¿¡·¯
-		*/
-		
-		Singleton obj1 = Singleton.getInstance();
-		Singleton obj2 = Singleton.getInstance();
-		
-		if(obj1 == obj2) {
-			System.out.println("°°Àº Singleton °´Ã¼ ÀÔ´Ï´Ù.");
-		} else {
-			System.out.println("´Ù¸¥ Singleton °´Ã¼ ÀÔ´Ï´Ù.");
-		}
-	}
+  public static void main(String[] args) {
+    /*
+     *newì—°ì‚°ìë¡œ ë§Œë“¤ì§€ ëª»í•˜ê²Œ privateë¡œ ë§‰í˜
+		Singleton obj1 = new Singleton();  //ì»´íŒŒì¼ ì—ëŸ¬
+		Singleton obj2 = new Singleton();  //ì»´íŒŒì¼ ì—ëŸ¬
+     */
+
+    //ì‹±ê¸€í†¤ ë³€ìˆ˜ ì„ ì–¸
+    Singleton obj1 = Singleton.getInstance();
+    Singleton obj2 = Singleton.getInstance();
+
+    if(obj1 == obj2) {
+      System.out.println("ê°™ì€ Singleton ê°ì²´ì…ë‹ˆë‹¤.");
+    } else {
+      System.out.println("ë‹¤ë¥¸ Singleton ê°ì²´ì…ë‹ˆë‹¤.");
+    }
+    //ê°™ì€ Singleton ê°ì²´ì…ë‹ˆë‹¤.
+  }
 }

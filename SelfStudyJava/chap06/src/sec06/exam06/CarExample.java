@@ -1,22 +1,22 @@
 package sec06.exam06;
 
 public class CarExample {
-	public static void main(String[] args) {
-		Car myCar = new Car();
-		
-		//Àß¸øµÈ ¼Óµµ º¯°æ
-		myCar.setSpeed(-50);
-		
-		System.out.println("ÇöÀç ¼Óµµ: " + myCar.getSpeed());
-		
-		//¿Ã¹Ù¸¥ ¼Óµµ º¯°æ
-		myCar.setSpeed(60);
-		
-		//¸ØÃã
-		if(!myCar.isStop()) {
-			myCar.setStop(true);
-		}
-		
-		System.out.println("ÇöÀç ¼Óµµ: " + myCar.getSpeed());
-	}
+  public static void main(String[] args) {
+    Car myCar = new Car();
+
+    //ì˜ëª»ëœ ì†ë„ ë³€ê²½
+    myCar.setSpeed(-50);
+
+    System.out.println("í˜„ì¬ ì†ë„: " + myCar.getSpeed());
+
+    //ì˜¬ë°”ë¥¸ ì†ë„ ë³€ê²½
+    myCar.setSpeed(60);
+
+    //ë©ˆì¶¤
+    if(!myCar.isStop()) { //ì›€ì§ì´ê³ ìˆëƒ?
+      myCar.setStop(false); //ì‘, ì›€ì§ì´ê³  ìˆëŠ”ë°?
+    }
+
+    System.out.println("í˜„ì¬ ì†ë„: " + myCar.getSpeed());
+  }
 }

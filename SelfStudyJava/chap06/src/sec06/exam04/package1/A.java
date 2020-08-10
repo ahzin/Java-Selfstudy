@@ -1,14 +1,22 @@
 package sec06.exam04.package1;
 
 public class A {
-	//�ʵ�
-	A a1 = new A(true);
-	A a2 = new A(1);
-	A a3 = new A("���ڿ�");
+  //필드
+  A a1 = new A(true);
+  A a2 = new A(1);
+  A a3 = new A("문자열");
 
-	//������	
-	public A(boolean b) {}
-	A(int b) {}
-	private A(String s) {} 
+  //생성자
+  public A(boolean b) {
+    //public 접근제한 -> package2도 사용가능
+  }
+
+  A(int b) {
+    //default 접근제한 -> package1내에서만 사용가능
+  }
+
+  private A(String s) {
+    //private 접근제한 -> package1의 A에서만 사용가능
+  }
 }
 
