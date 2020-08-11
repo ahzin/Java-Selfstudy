@@ -1,18 +1,18 @@
 package sec01.exam06;
 
 public class SportsCar extends Car {
-	@Override
-	public void speedUp() {
-		speed += 10;
-	}
-	
-	//¿À¹ö¶óÀÌµùÀ» ÇÒ ¼ö ¾øÀ½
-	/*
+  @Override
+  public void speedUp() {
+    speed += 10;
+  }
+
+  //ì¬ì •ì˜ í•  ìˆ˜ ì—†ìŒ
+  /*
 	@Override
 	public void stop() {
-		System.out.println("½ºÆ÷Ã÷Ä«¸¦ ¸ØÃã");
+		System.out.println("ìŠ¤í¬ì¸ ì¹´ë¥¼ ë©ˆì¶¤");
 		speed = 0;
 	}
-	*/
+   */
 }
 

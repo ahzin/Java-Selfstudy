@@ -1,28 +1,28 @@
 package sec01.exam01;
 
 public class DmbCellPhoneExample {
-	public static void main(String[] args) {
-		//DmbCellPhone °´Ã¼ »ı¼º
-		DmbCellPhone dmbCellPhone = new DmbCellPhone("ÀÚ¹ÙÆù", "°ËÁ¤", 10);
-		
-		//CellPhoneÀ¸·ÎºÎÅÍ »ó¼Ó ¹ŞÀº ÇÊµå
-		System.out.println("¸ğµ¨: " + dmbCellPhone.model);
-		System.out.println("»ö»ó: " + dmbCellPhone.color);
-		
-		//DmbCellPhoneÀÇ ÇÊµå
-		System.out.println("Ã¤³Î: " + dmbCellPhone.channel);
-		
-		//CellPhoneÀ¸·ÎºÎÅÍ »ó¼Ó ¹ŞÀº ¸Ş¼Òµå È£Ãâ
-		dmbCellPhone.powerOn();
-		dmbCellPhone.bell();
-		dmbCellPhone.sendVoice("¿©º¸¼¼¿ä");
-		dmbCellPhone.receiveVoice("¾È³çÇÏ¼¼¿ä! Àú´Â È«±æµ¿ÀÎµ¥¿ä");
-		dmbCellPhone.sendVoice("¾Æ~ ¿¹ ¹İ°©½À´Ï´Ù.");
-		dmbCellPhone.hangUp();
+  public static void main(String[] args) {
+    //DmbCellPhone ê°ì²´ ìƒì„±
+    DmbCellPhone dmbCellPhone = new DmbCellPhone("ìë°”í°", "ê²€ì •", 10);
 
-		//DmbCellPhoneÀÇ ¸Ş¼Òµå È£Ãâ
-		dmbCellPhone.turnOnDmb();
-		dmbCellPhone.changeChannelDmb(12);
-		dmbCellPhone.turnOffDmb();
-	}
+    //CellPhone í´ë˜ìŠ¤ë¡œë¶€í„° ìƒì†ë°›ì€ í•„ë“œ
+    System.out.println("ëª¨ë¸: " + dmbCellPhone.model);
+    System.out.println("ìƒ‰ìƒ: " + dmbCellPhone.color);
+
+    //DmbCellPhone í´ë˜ìŠ¤ì˜ í•„ë“œ
+    System.out.println("ì±„ë„: " + dmbCellPhone.channel);
+
+    //CellPhone í´ë˜ìŠ¤ë¡œë¶€í„° ìƒì†ë°›ì€ ë©”ì†Œë“œ í˜¸ì¶œ
+    dmbCellPhone.powerOn();
+    dmbCellPhone.bell();
+    dmbCellPhone.sendVoice("ì—¬ë³´ì„¸ìš”.");
+    dmbCellPhone.receiveVoice("ì•ˆë…•í•˜ì„¸ìš”! ì €ëŠ” í™ê¸¸ë™ì¸ë°ìš”.");
+    dmbCellPhone.sendVoice("ì•„ì•„~ ì˜ˆ ë°˜ê°‘ìŠµë‹ˆë‹¤.");
+    dmbCellPhone.hangUp();
+
+    //DmbCellPhone í´ë˜ìŠ¤ì˜ ë©”ì†Œë“œ í˜¸ì¶œ
+    dmbCellPhone.turnOnDmb();
+    dmbCellPhone.changeChannelDmb(12);
+    dmbCellPhone.turnOffDmb();
+  }
 }

@@ -1,14 +1,14 @@
 package sec01.exam04;
 
 public class Airplane {
-	public void land() {
-		System.out.println("Âø·úÇÕ´Ï´Ù.");
-	}	
-	public void fly() {
-		System.out.println("ÀÏ¹İºñÇàÇÕ´Ï´Ù.");
-	}	
-	public void takeOff() {
-		System.out.println("ÀÌ·úÇÕ´Ï´Ù.");
-	}	
+  public void land() {
+    System.out.println("ì°©ë¥™í•©ë‹ˆë‹¤.");
+  }
+  public void fly() {
+    System.out.println("ì¼ë°˜ë¹„í–‰í•©ë‹ˆë‹¤.");
+  }
+  public void takeOff() {
+    System.out.println("ì´ë¥™í•©ë‹ˆë‹¤.");
+  }
 }
 

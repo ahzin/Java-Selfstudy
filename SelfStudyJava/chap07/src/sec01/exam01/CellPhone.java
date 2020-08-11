@@ -1,18 +1,24 @@
 package sec01.exam01;
 
 public class CellPhone {
-	//ÇÊµå
-	String model;
-	String color;
-	
-	//»ı¼ºÀÚ
-	
-	//¸Ş¼Òµå
-	void powerOn() { System.out.println("Àü¿øÀ» ÄÕ´Ï´Ù."); }	
-	void powerOff() { System.out.println("Àü¿øÀ» ²ü´Ï´Ù."); }
-	void bell() { System.out.println("º§ÀÌ ¿ï¸³´Ï´Ù."); }	
-	void sendVoice(String message) { System.out.println("ÀÚ±â: " + message); }	
-	void receiveVoice(String message) { System.out.println("»ó´ë¹æ: " + message); }	
-	void hangUp() { System.out.println("ÀüÈ­¸¦ ²÷½À´Ï´Ù."); }
+  //í•„ë“œ
+  String model;
+  String color;
+  //ë‹¤ë¥¸íŒ¨í‚¤ì§€ì— ìˆì„ ê²½ìš°ì—ëŠ” default ì´ë¯€ë¡œ
+  //public String model;
+  //public String color; ë¡œ ì¨ì•¼í•œë‹¤.
+
+  //ìƒì„±ì
+  public CellPhone() {
+    System.out.println("CellPhone() í˜¸ì¶œë¨!");
+  }
+
+  //ë©”ì†Œë“œ
+  void powerOn() { System.out.println("ì „ì›ì„ ì¼­ë‹ˆë‹¤."); }
+  void powerOff() { System.out.println("ì „ì›ì„ ë•ë‹ˆë‹¤."); }
+  void bell() { System.out.println("ë²¨ì´ ìš¸ë¦½ë‹ˆë‹¤."); }
+  void sendVoice(String message) { System.out.println("ìê¸°: " + message); }
+  void receiveVoice(String message) { System.out.println("ìƒëŒ€ë°©: " + message); }
+  void hangUp() { System.out.println("ì „í™”ë¥¼ ëŠìŠµë‹ˆë‹¤."); }
 }
 

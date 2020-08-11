@@ -1,18 +1,18 @@
 package sec01.exam06;
 
 public class Car {
-	//ÇÊµå
-	public int speed;
-	
-	//¸Ş¼Òµå
-	public void speedUp() {
-		speed += 1;
-	}		
-	
-	//final ¸Ş¼Òµå
-	public final void stop() {
-		System.out.println("Â÷¸¦ ¸ØÃã");
-		speed = 0;
-	}
+  //í•„ë“œ
+  public int speed;
+
+  //ìƒì„±ì
+  public void speedUp() {
+    speed += 1;
+  }
+
+  //final ë©”ì†Œë“œ - ì¬ì •ì˜ ë¶ˆê°€
+  public final void stop() {
+    System.out.println("ì°¨ë¥¼ ë©ˆì¶¤");
+    speed = 0;
+  }
 }
 

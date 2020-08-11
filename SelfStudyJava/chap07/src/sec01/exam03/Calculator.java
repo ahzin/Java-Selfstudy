@@ -1,9 +1,9 @@
 package sec01.exam03;
 
-public class Calculator {	
-	double areaCircle(double r) { 
-		System.out.println("Calculator ∞¥√º¿« areaCircle() Ω««‡");
-		return 3.14159 * r * r; 
-	}
+public class Calculator {
+  double areaCircle(double r) {
+    System.out.println("Calculator Í∞ùÏ≤¥Ïùò areaCircle(double r) Ïã§Ìñâ");
+    return 3.14159 * r * r;
+  }
 }
 

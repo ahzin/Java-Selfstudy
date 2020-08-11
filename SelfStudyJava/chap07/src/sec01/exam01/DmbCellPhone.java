@@ -1,26 +1,28 @@
 package sec01.exam01;
 
 public class DmbCellPhone extends CellPhone {
-	//ÇÊµå
-	int channel;
-	
-	//»ı¼ºÀÚ
-	DmbCellPhone(String model, String color, int channel) {
-		this.model = model;
-		this.color = color;
-		this.channel = channel;
-	}
+  //í•„ë“œ
+  int channel;
 
-	//¸Ş¼Òµå
-	void turnOnDmb() {
-		System.out.println("Ã¤³Î " + channel + "¹ø DMB ¹æ¼Û ¼ö½ÅÀ» ½ÃÀÛÇÕ´Ï´Ù.");
-	}	
-	void changeChannelDmb(int channel) {
-		this.channel = channel;
-		System.out.println("Ã¤³Î " + channel + "¹øÀ¸·Î ¹Ù²ß´Ï´Ù.");
-	}
-	void turnOffDmb() {
-		System.out.println("DMB ¹æ¼Û ¼ö½ÅÀ» ¸ØÃä´Ï´Ù.");
-	}	
+  //ìƒì„±ì
+  DmbCellPhone(String model, String color, int channel) {
+    super();
+
+    this.model = model;
+    this.color = color;
+    this.channel = channel;
+  }
+
+  //ë©”ì†Œë“œ
+  void turnOnDmb() {
+    System.out.println("ì±„ë„ " + channel + "ë²ˆ DMB ë°©ì†¡ ìˆ˜ì‹ ì„ ì‹œì‘í•©ë‹ˆë‹¤.");
+  }
+  void changeChannelDmb(int channel) {
+    this.channel = channel;
+    System.out.println("ì±„ë„ " + channel + "ë²ˆìœ¼ë¡œ ë°”ê¿‰ë‹ˆë‹¤.");
+  }
+  void turnOffDmb() {
+    System.out.println("DMB ë°©ì†¡ ìˆ˜ì‹ ì„ ë©ˆì¶¥ë‹ˆë‹¤.");
+  }
 }
 
