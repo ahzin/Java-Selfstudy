@@ -1,18 +1,18 @@
 package sec02.exam05;
-
+//ê°•ì œíƒ€ì…ë³€í™˜
 public class ChildExample {
-	public static void main(String[] args) {
-		Parent parent = new Child();
-		parent.field1 = "data1";
-		parent.method1();
-		parent.method2();
-		/*
-		parent.field2 = "data2";  //(ºÒ°¡´É)
-		parent.method3();         //(ºÒ°¡´É)
-		*/
-		
-		Child child = (Child) parent;
-		child.field2 = "yyy";  //(°¡´É)
-		child.method3();     //(°¡´É)
-	}
+  public static void main(String[] args) {
+    Parent parent = new Child(); //ìë™íƒ€ì…ë³€í™˜
+    parent.field1 = "data1";
+    parent.method1();
+    parent.method2();
+    /*
+		parent.field2 = "data2";  //(ë¶ˆê°€ëŠ¥)
+		parent.method3();         //(ë¶ˆê°€ëŠ¥)
+     */
+
+    Child child = (Child) parent; //ê°•ì œíƒ€ì…ë³€í™˜
+    child.field2 = "yyy";  //(ê°€ëŠ¥)
+    child.method3();     //(ê°€ëŠ¥)
+  }
 }

@@ -1,27 +1,28 @@
 package sec02.exam03;
-
+//íƒ€ì´ì–´ê°€ ê°€ì§€ê³ ìˆëŠ” ì¼ë°˜íŠ¹ì„±ë§Œ ì •ì˜
 public class Tire {
-	//ÇÊµå
-	public int maxRotation;     			//ÃÖ´ë È¸Àü¼ö(ÃÖ´ë ¼ö¸í)
-	public int accumulatedRotation;		//´©Àû È¸Àü¼ö
-	public String location;       			//Å¸ÀÌ¾îÀÇ À§Ä¡
+  //í•„ë“œ
+  public int maxRotation;     			//ìµœëŒ€ íšŒì „ìˆ˜(íƒ€ì´ì–´ ìˆ˜ëª…)
+  public int accumulatedRotation;		//ëˆ„ì  íšŒì „ìˆ˜
+  public String location;       			//íƒ€ì´ì–´ì˜ ìœ„
 
-	//»ı¼ºÀÚ
-	public Tire(String location, int maxRotation) {
-		this.location = location;
-		this.maxRotation = maxRotation;
-	}
+  //ìƒì„±ì
+  public Tire(String location, int maxRotation) {
+    this.location = location; //ì™¼/ì˜¤/ì•/ë’¤
+    this.maxRotation = maxRotation;
+  }
 
-	//¸Ş¼Òµå
-	public boolean roll() {
-		++accumulatedRotation;		
-		if(accumulatedRotation<maxRotation) {
-			System.out.println(location + " Tire ¼ö¸í: " + (maxRotation-accumulatedRotation) + "È¸");
-			return true;
-		} else {
-			System.out.println("*** " + location + " Tire ÆãÅ© ***");
-			return false;
-		}
-	}
+  //ë©”ì†Œë“œ
+  public boolean roll() { //íšŒì „ í• ìˆ˜ ìˆë‹ˆ, ì—†ë‹ˆ?
+    ++accumulatedRotation;
+    if(accumulatedRotation<maxRotation) {
+      System.out.println(location + " Tire ìˆ˜ëª…: "
+          + (maxRotation-accumulatedRotation) + "íšŒ");
+      return true;
+    } else {
+      System.out.println("*** " + location + " Tire í‘í¬ ***");
+      return false;
+    }
+  }
 }
 

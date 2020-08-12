@@ -1,8 +1,8 @@
 package sec02.exam04;
-
+//ìì‹í´ë˜ìŠ¤
 public class Bus extends Vehicle {
-	@Override
-	public void run() {
-		System.out.println("¹ö½º°¡ ´Ş¸³´Ï´Ù.");
-	}
+  @Override
+  public void run() {
+    System.out.println("ë²„ìŠ¤ê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
+  }
 }

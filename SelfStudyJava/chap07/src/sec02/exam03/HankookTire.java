@@ -1,21 +1,22 @@
 package sec02.exam03;
 
 public class HankookTire extends Tire {
-	//ÇÊµå
-	//»ý¼ºÀÚ
-	public HankookTire(String location, int maxRotation) {
-		super(location, maxRotation);
-	}	
-	//¸Þ¼Òµå
-	@Override
-	public boolean roll() {
-		++accumulatedRotation;		
-		if(accumulatedRotation<maxRotation) {
-			System.out.println(location + " HankookTire ¼ö¸í: " + (maxRotation-accumulatedRotation) + "È¸");
-			return true;
-		} else {
-			System.out.println("*** " + location + " HankookTire ÆãÅ© ***");
-			return false;
-		}
-	}
+  //í•„ë“œ
+  //ìƒì„±ìž
+  public HankookTire(String location, int maxRotation) {
+    super(location, maxRotation);
+  }
+  //ë©”ì†Œë“œ
+  @Override
+  public boolean roll() {
+    ++accumulatedRotation;
+    if(accumulatedRotation<maxRotation) {
+      System.out.println(location + " HankookTire ìˆ˜ëª…: "
+          + (maxRotation-accumulatedRotation) + "íšŒ");
+      return true;
+    } else {
+      System.out.println("*** " + location + " HankookTire íŽ‘í¬ ***");
+      return false;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 package sec02.exam04;
-
+//ë¶€ëª¨í´ë˜ìŠ¤
 public class Vehicle {
-	public void run() {
-		System.out.println("Â÷·®ÀÌ ´Ş¸³´Ï´Ù.");
-	}
+  public void run() {
+    System.out.println("ì°¨ëŸ‰ì´ ë‹¬ë¦½ë‹ˆë‹¤.");
+  }
 }

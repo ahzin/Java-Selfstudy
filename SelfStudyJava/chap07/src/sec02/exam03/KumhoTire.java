@@ -1,21 +1,22 @@
 package sec02.exam03;
 
 public class KumhoTire extends Tire {
-	//ÇÊµå
-	//»ý¼ºÀÚ
-	public KumhoTire(String location, int maxRotation) {
-		super(location, maxRotation);
-	}	
-	//¸Þ¼Òµå
-	@Override
-	public boolean roll() {
-		++accumulatedRotation;		
-		if(accumulatedRotation<maxRotation) {
-			System.out.println(location + " KumhoTire ¼ö¸í: " + (maxRotation-accumulatedRotation) + "È¸");
-			return true;
-		} else {
-			System.out.println("*** " + location + " KumhoTire ÆãÅ© ***");
-			return false;
-		}
-	}
+  //í•„ë“œ
+  //ìƒì„±ìž
+  public KumhoTire(String location, int maxRotation) {
+    super(location, maxRotation);
+  }
+  //ë©”ì†Œë“œ
+  @Override
+  public boolean roll() {
+    ++accumulatedRotation;
+    if(accumulatedRotation<maxRotation) {
+      System.out.println(location + " KumhoTire ìˆ˜ëª…: "
+          + (maxRotation-accumulatedRotation) + "íšŒ");
+      return true;
+    } else {
+      System.out.println("*** " + location + " KumhoTire íŽ‘í¬ ***");
+      return false;
+    }
+  }
 }

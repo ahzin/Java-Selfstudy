@@ -1,30 +1,30 @@
 package sec02.exam03;
 
 public class CarExample {
-	public static void main(String[] args) {
-		Car car = new Car();
-		
-		for(int i=1; i<=5; i++) {
-			int problemLocation = car.run();
-			switch(problemLocation) {
-				case 1:
-					System.out.println("¾Õ¿ÞÂÊ HankookTire·Î ±³Ã¼");
-					car.frontLeftTire = new HankookTire("¾Õ¿ÞÂÊ", 15);
-					break;
-				case 2:
-					System.out.println("¾Õ¿À¸¥ÂÊ KumhoTire·Î ±³Ã¼");
-					car.frontRightTire = new KumhoTire("¾Õ¿À¸¥ÂÊ", 13);	
-					break;
-				case 3:
-					System.out.println("µÚ¿ÞÂÊ HankookTire·Î ±³Ã¼");
-					car.backLeftTire = new HankookTire("µÚ¿ÞÂÊ", 14);	
-					break;
-				case 4:
-					System.out.println("µÚ¿À¸¥ÂÊ KumhoTire·Î ±³Ã¼");
-					car.backRightTire = new KumhoTire("µÚ¿À¸¥ÂÊ", 17);		
-					break;
-			}
-			System.out.println("----------------------------------------");
-		}
-	}
+  public static void main(String[] args) {
+    Car car = new Car();
+
+    for(int i=1; i<=5; i++) {
+      int problemLocation = car.run();
+      switch(problemLocation) {
+        case 1:
+          System.out.println("ì•žì™¼ìª½ HankookTireë¡œ êµì²´");
+          car.frontLeftTire = new HankookTire("ì•žì™¼ìª½", 15);
+          break;
+        case 2:
+          System.out.println("ì•žì˜¤ë¥¸ìª½ KumhoTireë¡œ êµì²´");
+          car.frontRightTire = new KumhoTire("ì•žì˜¤ë¥¸ìª½", 13);
+          break;
+        case 3:
+          System.out.println("ë’¤ì™¼ìª½ HankookTireë¡œ êµì²´");
+          car.backLeftTire = new HankookTire("ë’¤ì™¼ìª½", 14);
+          break;
+        case 4:
+          System.out.println("ë’¤ì˜¤ë¥¸ìª½ KumhoTireë¡œ êµì²´");
+          car.backRightTire = new KumhoTire("ë’¤ì˜¤ë¥¸ìª½", 17);
+          break;
+      }
+      System.out.println("----------------------------------------");
+    }
+  }
 }

@@ -1,15 +1,15 @@
 package sec02.exam02;
 
 public class ChildExample {
-	public static void main(String[] args) {
-		  Child child = new Child();
+  public static void main(String[] args) {
+    Child child = new Child();
 
-		  Parent parent = child;
+    Parent parent = child; //자동 타입 반환
 
-		  parent.method1();
+    parent.method1();
 
-		  parent.method2();
+    parent.method2(); //재정의된 메소드 호출
 
-		  //parent.method3();  (ȣ�� �Ұ���)
-	}
+    //parent.method3();  //호출 불가능, child에 있기 때
+  }
 }

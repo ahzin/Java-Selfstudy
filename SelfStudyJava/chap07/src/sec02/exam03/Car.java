@@ -1,26 +1,26 @@
 package sec02.exam03;
 
 public class Car {
-	//ÇÊµå
-	Tire frontLeftTire = new Tire("¾Õ¿ŞÂÊ", 6);
-	Tire frontRightTire = new Tire("¾Õ¿À¸¥ÂÊ", 2);
-	Tire backLeftTire = new Tire("µÚ¿ŞÂÊ", 3);
-	Tire backRightTire = new Tire("µÚ¿À¸¥ÂÊ", 4);
-	
-	//»ı¼ºÀÚ
-	
-	//¸Ş¼Òµå
-	int run() {
-		System.out.println("[ÀÚµ¿Â÷°¡ ´Ş¸³´Ï´Ù.]");
-		if(frontLeftTire.roll()==false) { stop(); return 1; };
-		if(frontRightTire.roll()==false) { stop(); return 2; };
-		if(backLeftTire.roll()==false) { stop(); return 3; };
-		if(backRightTire.roll()==false) { stop(); return 4; };
-		return 0;
-	}
-	
-	void stop() {
-		System.out.println("[ÀÚµ¿Â÷°¡ ¸ØÃä´Ï´Ù.]");
-	}
+  //í•„ë“œ
+  Tire frontLeftTire = new Tire("ì•ì™¼ìª½", 6); //ìµœëŒ€ìˆ˜ëª… 6íšŒì „
+  Tire frontRightTire = new Tire("ì•ì˜¤ë¥¸ìª½", 2); //ìµœëŒ€ìˆ˜ëª… 2íšŒì „
+  Tire backLeftTire = new Tire("ë’¤ì™¼ìª½", 3); //ìµœëŒ€ìˆ˜ëª… 3íšŒì „
+  Tire backRightTire = new Tire("ë’¤ì˜¤ë¥¸ìª½", 4); //ìµœëŒ€ìˆ˜ëª… 4íšŒì „
+
+  //ìƒì„±ì
+
+  //ë©”ì†Œë“œ
+  int run() {
+    System.out.println("[ìë™ì°¨ê°€ ë‹¬ë¦½ë‹ˆë‹¤.]");
+    if(frontLeftTire.roll()==false) { stop(); return 1; };
+    if(frontRightTire.roll()==false) { stop(); return 2; };
+    if(backLeftTire.roll()==false) { stop(); return 3; };
+    if(backRightTire.roll()==false) { stop(); return 4; };
+    return 0; //ì–´ë–¤ íƒ€ì´ì–´ë„ í‘í¬ë‚˜ì§€ ì•Šì•˜ë‹¤.
+  }
+
+  void stop() {
+    System.out.println("[ìë™ì°¨ê°€ ë©ˆì¶¥ë‹ˆë‹¤ .]");
+  }
 }
 
